@@ -1,10 +1,11 @@
 import Cabecalho from "../components/Cabecalho";
+import Link from "next/link"
 
-export default function exemplo () { 
+export default function Home() { 
     return (
         <div>
-            <Cabecalho/>
-                        <Cabecalho/>
+        <Link href="/">voltar</Link>
+        <Cabecalho nome="mateus" idade={123} ehLegal={true}/>
         </div>
     )
 }

@@ -1,17 +1,19 @@
-export default function Início () {
-  const titulo = <h1> titulo no jsx</h1>
+import Link from "next/link"
 
-  function subtitulo() {
-    
-    return <h2>{"função dentro da função".TopUpperCase()}</h2>
-  }
+//import "../styles/Produto.module.css"
+
+export default function Home() {
   return (
-    <div> 
-        {titulo}
-        {subtitulo}
+    <div>
+      <h1>
         <p>
-          {JSON.stringify({nome: 'Mateus', idade: 23})}
+          <Link href='/exemplo'>
+            <a className="button">button vermelho </a>
+          </Link>
+          <p />
+          <strong>Início</strong>
         </p>
+      </h1>
     </div>
-    )
+  )
 }
